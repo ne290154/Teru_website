@@ -1,0 +1,247 @@
+<html lang="en">
+   <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+       <title>Teruaki Kondo Official Web Site</title>
+       <meta name="description" content="Landscape Photographer and Blogger. I am staying in Australia under the working holiday now. My dream for the future is to be a nomad worker.">
+       <link rel="icon" href="../images/favicon/32.png">
+       <link rel="stylesheet" type="text/css" href="../css/style.css?190918">
+       <link rel="stylesheet" type="text/css" href="../css/lightbox.css">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script src="../js/jquery.bgswitcher.js"></script>
+       <script src="../js/imagesloaded.pkgd.min.js"></script>
+       <script src="../js/velocity.js"></script>
+       <script src="../js/hammer.js"></script>
+       <script src="../js/muuri.js"></script>
+       <script>
+           jQuery(function($) {
+                //BG_Slideshow
+                var w = window.innerWidth;
+                var h = window.innerHeight;
+               
+                if (w/h < 1){
+                    $('.Top_slideshow').bgSwitcher({
+                        images: ['../images/Top/Top_img1_pr.jpg','../images/Top/Top_img2_pr.jpg','../images/Top/Top_img3_pr.jpg','../images/Top/Top_img4_pr.jpg', '../images/Top/Top_img5_pr.jpg'], 
+                    });
+                } else{
+                    $('.Top_slideshow').bgSwitcher({
+                        images: ['../images/Top/Top_img1_ls.jpg','../images/Top/Top_img2_ls.jpg','../images/Top/Top_img3_ls.jpg','../images/Top/Top_img4_ls.jpg', '../images/Top/Top_img5_ls.jpg'], 
+                    });  
+                }
+                
+                $(window).resize(function(){
+                    var w = window.innerWidth;
+                    var h = window.innerHeight;
+                   
+                    if (w/h < 1){
+                        $('.Top_slideshow').bgSwitcher({
+                            images: ['../images/Top/Top_img1_pr.jpg','../images/Top/Top_img2_pr.jpg','../images/Top/Top_img3_pr.jpg','../images/Top/Top_img4_pr.jpg', '../images/Top/Top_img5_pr.jpg'], 
+                        });
+                    } else{
+                        $('.Top_slideshow').bgSwitcher({
+                            images: ['../images/Top/Top_img1_ls.jpg','../images/Top/Top_img2_ls.jpg','../images/Top/Top_img3_ls.jpg','../images/Top/Top_img4_ls.jpg', '../images/Top/Top_img5_ls.jpg'], 
+                        });  
+                    }
+                });
+
+                //menubar_bgcolor
+                var menubar = $('.Top_menubar');
+                var windowHeight = window.innerHeight;
+                $(menubar).css('background-color','rgba(51, 51, 51, 0)');
+
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > windowHeight-100) {
+                        $(menubar).css('background-color','rgba(51, 51, 51, 0.8)');
+                    } else {
+                        $(menubar).css('background-color','rgba(51, 51, 51, 0)');
+                    }
+                });
+               
+                //Gallery_img
+                var $Gallery = $('.Gallery');
+                
+                $Gallery.imagesLoaded(function(){
+                    var grid = new Muuri('.Gallery_grid', {
+                      dragEnabled: false,
+                      layout: {
+                        fillGaps: true
+                      }
+                    });
+                });
+                $(window).resize(function(){
+                    var grid = new Muuri('.Gallery_grid', {
+                      dragEnabled: false,
+                      layout: {
+                        fillGaps: true
+                      }
+                    });
+                });
+            });
+       </script>
+    </head> 
+    <body>
+        <div class="main">
+            <header class="Top">
+                <div class="Top_menu">
+                    <ul class="Top_menubar notranslate">
+                        <li class="menu_item1 Top_menu_item">
+                            <a href="./index.html">HOME</a>
+                        </li>
+                        <li class="menu_item3 Top_menu_item">
+                            <a href="./about.html">ABOUT</a>
+                        </li>
+                        <li class="menu_item2 Top_menu_item">
+                            <a href="./portfolio.html">PORTFOLIO</a>
+                        </li>
+                        <li class="menu_item3 Top_menu_item">
+                            <a href="https://teruakikondo.com" target="_blank">BLOG</a>
+                        </li>
+                        <li class="menu_item4 Top_menu_item">
+                            <a href="./contact.html">CONTACT</a>
+                        </li>   
+                    </ul>
+                    <div class="Top_menu_lang">
+                        <a href="./index.html">en</a>
+                        <a href="../jp/index.html">jp</a>
+                    </div>  
+                </div>
+                <div class="Top_slideshow">
+                    <p class="Top_title notranslate">Teruaki Kondo</p>
+                    <p class="Top_subtitle notranslate">Landscape Photographer</p>
+                </div>
+            </header>
+            <section class="Gallery">
+                <h2 class="Gallery_title title notranslate">GALLERY</h2>
+                <div class="Gallery_grid notranslate">
+                    <div class="Gallery_item">
+                        <div class="Gallery_item-content">
+                            <a href="../images/gal/gal1.jpg" data-lightbox="gal" data-title="Midsummer Twilight">
+                                <img class="Gallery_img_sq" src="../images/gal/th_gal1.jpg">
+                                <p class="Gallery_img_title">Midsummer Twilight</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="Gallery_item Gallery_item_ls">
+                        <div class="Gallery_item-content">
+                            <a href="../images/gal/gal2.jpg" data-lightbox="gal" data-title="The last adventure">
+                                <img class="Gallery_img_ls" src="../images/gal/th_gal2.jpg">
+                                <p class="Gallery_img_title">The last adventure</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="Gallery_item Gallery_item_pr">
+                        <div class="Gallery_item-content">
+                            <a href="../images/gal/gal3.jpg?190914" data-lightbox="gal" data-title="Natural world">
+                                <img class="Gallery_img_pr" src="../images/gal/th_gal3.jpg">
+                                <p class="Gallery_img_title">Natural world</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="Gallery_item">
+                        <div class="Gallery_item-content">
+                            <a href="../images/gal/gal4.jpg" data-lightbox="gal" data-title="Subtle memory">
+                                <img class="Gallery_img_sq" src="../images/gal/th_gal4.jpg">
+                                <p class="Gallery_img_title">Subtle memory</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="Gallery_item Gallery_item_ls">
+                        <div class="Gallery_item-content">
+                            <a href="../images/gal/gal5.jpg" data-lightbox="gal" data-title="he end of a fairy tale">
+                                <img class="Gallery_img_ls" src="../images/gal/th_gal5.jpg">
+                                <p class="Gallery_img_title">The end of a fairy tale</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="Gallery_item">
+                        <div class="Gallery_item-content">
+                            <a href="../images/gal/gal6.jpg" data-lightbox="gal" data-title="Secret situation">
+                                <img class="Gallery_img_sq" src="../images/gal/th_gal6.jpg">
+                                <p class="Gallery_img_title">Secret situation</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="Gallery_item">
+                        <div class="Gallery_item-content">
+                            <a href="../images/gal/gal7.jpg?190914" data-lightbox="gal" data-title="Boundary line">
+                                <img class="Gallery_img_sq" src="../images/gal/th_gal7.jpg">
+                                <p class="Gallery_img_title">Boundary line</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="Gallery_item Gallery_item_ls">
+                        <div class="Gallery_item-content">
+                            <a href="../images/gal/gal8.jpg" data-lightbox="gal" data-title="Spare pallet">
+                                <img class="Gallery_img_ls" src="../images/gal/th_gal8.jpg">
+                                <p class="Gallery_img_title">Spare pallet</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="Gallery_item">
+                        <div class="Gallery_item-content">
+                            <a href="../images/gal/gal9.jpg" data-lightbox="gal" data-title="Flow">
+                                <img class="Gallery_img_sq" src="../images/gal/th_gal9.jpg">
+                                <p class="Gallery_img_title">Flow</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="Gallery_item">
+                        <div class="Gallery_item-content">
+                            <a href="../images/gal/gal10.jpg" data-lightbox="gal" data-title="A bridge that ascends to heaven">
+                                <img class="Gallery_img_sq" src="../images/gal/th_gal10.jpg">
+                                <p class="Gallery_img_title">A bridge that ascends to heaven</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="Gallery_item">
+                        <div class="Gallery_item-content">
+                            <a href="../images/gal/gal11.jpg" data-lightbox="gal" data-title="Outside of wall">
+                                <img class="Gallery_img_sq" src="../images/gal/th_gal11.jpg">
+                                <p class="Gallery_img_title">Outside of wall</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="Gallery_item">
+                        <div class="Gallery_item-content">
+                            <a href="../images/gal/gal12.jpg" data-lightbox="gal" data-title="Mystery pond">
+                                <img class="Gallery_img_sq" src="../images/gal/th_gal12.jpg">
+                                <p class="Gallery_img_title">Mystery pond</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="Introduction">
+                <h2 class="Intro_title title notranslate">SELF-INTRODUCTION</h2>
+                <p class="Intro_img"><img src="../images/Intro_img.jpg"></p>
+                <p class="Intro_name notranslate">Teruaki Kondo</p>
+                <p class="Intro_degree">Landscape Photographer</p>
+                <p class="Intro_sentence">
+                    It's memory I was impressed something  in Australia and Japan.
+                </p>
+                <p class="Intro_sentence">
+                    Furthermore, These are the world lines that nature and artifact weave.
+                </p>
+            </section>
+            <footer>
+                <hr>
+                <div class="SNS">
+                    <ul class="SNS_list">
+                        <li><a href="https://www.instagram.com/teruaki_kondo/" target="_blank"></a></li>
+                        <li><a href="https://twitter.com/teruaki_kondo" target="_blank"></a></li>
+                        <li><a href="https://m.facebook.com/teruaki.kondo.photograph" target="_blank"></a></li>
+                    </ul>
+                </div>
+                <p class="copylight notranslate">&copy;Teruaki Kondo. All rights reserved.</p>
+            </footer>
+        </div>
+        <script src="../js/lightbox.js"></script>
+        <script>
+            lightbox.option({
+                'fitImagesInViewport' : true,
+                'showImageNumberLabel' : false
+            })
+        </script>
+    </body>
+</html>
