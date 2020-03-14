@@ -1,0 +1,129 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Teruaki Kondo - Contact</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css?190918">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./js/lang_change.js"></script>
+  <script>
+    function checkText() {
+      if (window.confirm("Are you sure you want to submit the form?")) {
+        window.alert('Your message has been sent.');
+        return true;
+      } else {
+        window.alert('Please continue inputing.');
+        return false;
+      }
+    }
+
+  </script>
+</head>
+
+<body>
+  <div class="main Contact_main">
+   
+    <!--=*=*=*=*=*| Header |=*=*=*=*=-->
+    <header class="Top">
+      <!--=== Menubar ===-->
+      <div class="Top_menu">
+        <ul class="Top_menubar notranslate">
+          <li class="menu_item1 Top_menu_item">
+            <a class="menu_home">HOME</a>
+          </li>
+          <li class="menu_item3 Top_menu_item">
+            <a class="menu_about">ABOUT</a>
+          </li>
+          <li class="menu_item2 Top_menu_item">
+            <a class="menu_portfolio">PORTFOLIO</a>
+          </li>
+          <li class="menu_item3 Top_menu_item">
+            <a href="https://teruakikondo.com" target="_blank">BLOG</a>
+          </li>
+          <li class="menu_item4 Top_menu_item">
+            <a class="menu_contact">CONTACT</a>
+          </li>
+        </ul>
+        <div class="Top_menu_lang">
+          <p class="lang_en">en</p>
+          <p class="lang_jp">jp</p>
+        </div>
+      </div>
+      <!--=== Menubar end ===-->
+    </header>
+    <!--=*=*=*=*=*| Header |=*=*=*=*=-->
+    
+    <!--=*=*=*=*=*| Content |=*=*=*=*=-->
+    <div class="Contact">
+     
+      <!--=== Access ===-->
+      <h2 class="Contact_title title notranslate">Contact</h2>
+      <p class="Contact_sentence en">
+        To request a business : You need to send a message.<br>
+        And If you have question, Please use this.
+      </p>
+      <p class="Contact_sentence jp">
+        仕事のご依頼や、お問い合わせはこちらへ
+      </p>
+      <section class="Contact_info">
+        <p class="info_title notranslate">Teruaki Kondo</p>
+        <p class="info_contents">
+          Southport<br>
+          Gold Coast<br>
+          Queensland Australia<br>
+          Mail : <a href="mailto:tk.art.414@gmail.com">tk.art.414@gmail.com</a>
+        </p>
+      </section>
+      <!--=== Access ===-->
+      <hr>
+      <!--=== E-Mail form ===-->
+      <form class="Contact_form" method="post" action="./mail.php" onsubmit="return checkText();">
+        <p class="form_notice">
+          ・All fields are required.
+        </p>
+        <div class="form_item">
+          <p class="form_title">Name</p>
+          <input type="text" name="name" required>
+        </div>
+        <div class="form_item">
+          <p class="form_title">E-mail</p>
+          <input type="email" name="mail_address" required>
+        </div>
+        <div class="form_item">
+          <p class="form_title">Title</p>
+          <input type="text" name="title" required>
+        </div>
+        <div class="form_item">
+          <p class="form_title">Message</p>
+          <textarea name="message" required></textarea>
+        </div>
+        <div class="btn_area">
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </div>
+      </form>
+      <!--=== E-Mail form ===-->
+      
+    </div>
+    <!--=*=*=*=*=*| Content |=*=*=*=*=-->
+    
+    <!--=*=*=*=*=*| Footer |=*=*=*=*=-->
+    <footer>
+      <hr>
+      <div class="SNS">
+        <ul class="SNS_list">
+          <li><a href="https://www.instagram.com/teruaki_kondo/" target="_blank"></a></li>
+          <li><a href="https://twitter.com/teruaki_kondo" target="_blank"></a></li>
+          <li><a href="https://m.facebook.com/teruaki.kondo.photograph" target="_blank"></a></li>
+        </ul>
+      </div>
+      <p class="copylight notranslate">&copy;Teruaki Kondo. All rights reserved.</p>
+    </footer>
+    <!--=*=*=*=*=*| Footer |=*=*=*=*=-->
+    
+  </div>
+</body>
+
+</html>
